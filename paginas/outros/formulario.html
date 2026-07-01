@@ -5,10 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto WEB - HTML/CSS</title>
     <link rel="stylesheet" href="../../css/style_form.css">
+
+    <link rel="stylesheet icon" href="../../imagens/favicon.svg" type="image/x-icon">
 </head>
 <body>
+
+    <div id="links">
+        <a href="../../index.html">Página inicial</a> |
+        <a href="../texto.html">Texto</a> |
+        <a href="outros/texto_especial.html">Texto especial</a> |
+        <a href="../listas.html">Listas</a> |
+        <a href="imagens.html"> Imagens</a>|
+        <a href="formulario.html">Formulário</a>
+    <div id="texto">
+
     <div id="div-form">
-        <h3>Formulário</h3>
+
+            <h3>Formulário</h3>
 
         <form name="form" id="form" method="post" action="">
             <label for="nome">Nome</label>
@@ -20,7 +33,7 @@
             <label for="datanascimento">Data de nascimento</label>
             <input type="date" name="datanascimento" id="datanascimento" class="input-vlr02" required placeholder="Informe sua data de nascimento">
 
-            <label for="sexo"></label>
+            <label for="sexo">Sexo</label>
             <input type="radio" name="sexo" id="sexoM" class="input-option" value="M">Masculino
             <input type="radio" name="sexo" id="sexoF" class="input-option" value="F">Feminino
             <input type="radio" name="sexo" id="sexoN" class="input-option" value="N">Não Declarar
@@ -35,7 +48,8 @@
             <input type="text" id="senha" class="input-vlr02" maxlength="6" required placeholder="Informe a senha">
 
             <label for="estado">Estado</label>
-            <select name="estado" id="estado" class="input-vlr02" required>
+            <select name="estado" id="estado" class="input-vlr02" required placeholder="Informe um estado">
+                <option>Selecione um estado</option>
                 <option value="Al">Alagoas</option>
                 <option value="Ba">Bahia</option>
                 <option value="Ce">Ceará</option>
@@ -46,13 +60,17 @@
                 <option value="RN">Rio Grande do Norte</option>
                 <option value="Se">Sergipe</option>
             </select>
-
+            
             <label for="comentario">Comentario</label>
             <textarea name="comentario" id="comentario" placeholder="Informe seu comentario" required></textarea>
+
+        <div id="div-btn">
 
             <button type="submit" id="btn-enviar">Enviar</button>
             <button type="reset" id="btn-limpar">Limpar</button>
             <button id="btn">Botão</button>
+
+        </div>
 
         </form>
 
